@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+        PersonalAccount account = new PersonalAccount(123321, "John Snow");
+
+        account.deposit(500);
+        account.withdraw(200);
+        account.withdraw(350);
+
+        System.out.println("Current balance: " + account.getBalance());
+        account.printTransactionHistory();
+    }
+}
